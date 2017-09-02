@@ -1,0 +1,30 @@
+<div id="example-component-linking-2" data-bind="scope: 'component2'"></div>
+<div id="example-component-linking-1" data-bind="scope: 'component1'">
+    Yireo_ExampleComponentLinking: <span data-bind="text: message">First load</span>
+</div>
+<div style="clear:both"></div>
+<script type="text/x-magento-init">
+{
+    "#example-component-linking-1": {
+        "Magento_Ui/js/core/app": {
+            "components": {
+                "component1": {
+                    "component": "component1",
+                    "provider": "component2"
+                }
+            }
+        }
+    },
+    "#example-component-linking-2": {
+        "Magento_Ui/js/core/app": {
+            "components": {
+                "component2": {
+                    "component": "component2"
+                }
+            }
+        }
+    }
+}
+
+
+</script>
