@@ -2,8 +2,8 @@
 <page xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="urn:magento:framework:View/Layout/etc/page_configuration.xsd">
     <body>
         <referenceContainer name="content">
-            <block class="Magento\Framework\View\Element\Template" name="component-linking" template="Yireo_ExampleComponentLinking::example.phtml">
-            </block>
+            <block class="Magento\Framework\View\Element\Template" name="component2" template="Yireo_ExampleComponentLinking::component2.phtml"/>
+            <block class="Magento\Framework\View\Element\Template" name="component1" template="Yireo_ExampleComponentLinking::component1.phtml"/>
         </referenceContainer>
     </body>
 </page>

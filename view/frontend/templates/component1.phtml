@@ -1,0 +1,18 @@
+<div id="example-component-1" data-bind="scope: 'component1'">
+    Yireo_ExampleComponentLinking: <span data-bind="text: message">Waiting</span>
+</div>
+<div style="clear:both; padding:30px;"></div>
+<script type="text/x-magento-init">
+{
+    "#example-component-1": {
+        "Magento_Ui/js/core/app": {
+            "components": {
+                "component1": {
+                    "component": "component1",
+                    "provider": "component2"
+                }
+            }
+        }
+    }
+}
+</script>

@@ -1,23 +1,12 @@
 define(
     [
-        'ko',
-        'uiComponent',
-        'underscore'
+        'uiComponent'
     ],
-    function (ko,
-              Component,
-              _) {
+    function (Component) {
         'use strict';
         return Component.extend({
             defaults: {
-                message: 'Hello from component 2',
-                exports: {
-                    message: 'component1:message'
-                }
-            },
-            initialize: function () {
-                this._super();
-                return this;
+                message: 'Hello from component 2'
             }
         });
     }

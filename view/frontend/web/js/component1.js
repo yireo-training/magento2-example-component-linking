@@ -1,28 +1,19 @@
 define([
         'ko',
         'uiComponent',
-        'underscore',
-        'component2'
+        'underscore'
     ],
     function (ko,
               Component,
-              _,
-              component2
+              _
     ) {
         'use strict';
         return Component.extend({
             defaults: {
-                message: '',
-                provider: '',
-                'imports': {
-                    'message2': '$.component2.message',
-                    'message': '${ $.provider }:message'
+                message: 'Hello from component 1',
+                imports: {
+                    message: '${ $.provider }:message'
                 }
-            },
-            initialize: function () {
-                this._super();
-                console.log('Current message: ' + this.message);
-                return this;
             }
         });
     }
