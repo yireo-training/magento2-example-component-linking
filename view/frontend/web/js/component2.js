@@ -1,12 +1,16 @@
 define(
     [
-        'uiComponent'
+        'uiComponent',
+        'ko'
     ],
-    function (Component) {
+    function (Component, ko) {
         'use strict';
         return Component.extend({
             defaults: {
-                message: 'Hello from component 2'
+                message: 'Hello from component 2',
+                tracks: {
+                    message: true
+                }
             }
         });
     }
